@@ -1,0 +1,48 @@
+body{
+    background: #fafafa;
+}
+
+.dino{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(/images/dino.png) ;
+}
+
+.cactus{
+    background-image: url(/images/cactus.png);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+}
+
+.game-over{
+    text-align: center;
+    color: #222;
+    margin: auto;
+    margin-top: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+}
+
+@keyframes slideright {
+    from{
+        background-position: 70000%;
+
+    }
+    to{
+        background-position: 0;
+    }
+}
+
+.background{
+    position: absolute;
+    bottom: 0;
+    background-image: url(/images/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
